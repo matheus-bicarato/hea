@@ -1,0 +1,31 @@
+.sociais {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.sociais h1 {
+    font-size: 20px;
+}
+.sociais i {
+    font-size: 20px;
+}
+.footer{
+    margin: 30px;
+}
+.footer .footer-cima {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: end;
+}
+a{
+    color: black;
+}
+.footer-cima-direita .logo-footer{
+    width: 190px;
+}
+.footer-baixo .texto {
+    text-align: center;
+    font-size: 10px;
+    opacity: 0.8;
+}

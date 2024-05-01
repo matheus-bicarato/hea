@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  /* position: relative; */
+  height: 300px;
+  /* background-color: black; */
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.image {
+  width: 100%;
+  min-width: 300px;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  /* height: 100%; */
+  /* position: absolute; */
+}
+
+.active {
+  display: block;
+}
+
+/* -------------------------- */
+
+.carousel {
+  max-width: fit-content;
+  margin: 0 auto;
+  /* background-color: black; */
+}
+
+.product {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 250px;
+  height: auto;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.interacao {
+  padding: 8px 16px;
+  border: none;
+  background-color: #5cb4c2;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.interacao:hover {
+  background-color: #0056b3;
+  font-style: italic;
+}
+
+/* ------------------------ */
+div .produtos-favoritos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 1px solid rgb(165, 165, 165);
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.3);
+}
+
+.produtos-Carousel {
+  width: 50%;
+  margin: 10px;
+}
+
+div .caixa {
+  background-image: url('../../../assets/Fundo-conteudo.png');
+  background-size: cover;
+  /* ajusta o tamanho da imagem para cobrir toda a tela */
+  background-position: center;
+  align-content: center;
+  opacity: 0.4;
+  width: 50%;
+  margin: 10px;
+  font-size: 30px;
+
+}
+
+div .escrita {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+}
+div .escrita .consteudo-titulo p {
+  display: flex;
+  align-items: center;
+}
+div .escrita .frase-impactante p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
