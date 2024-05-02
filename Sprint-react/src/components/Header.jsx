@@ -34,17 +34,17 @@ const Header = () => {
             <hr />
             <ul className="conteudo">
                 |
-                <Link to={"/"}><li>Medicamentos</li></Link>
+                <Link to={"/Medicamentos"}><li>Medicamentos</li></Link>
                 |
-                <Link to={"/"}><li>Genéricos</li></Link>
+                <Link to={"/Generico"}><li>Genéricos</li></Link>
                 |
                 <Link to={"/SaudeBemEstar"}><li>Saúde e Bem Estar</li></Link>
                 |
                 <Link to={"/Beleza"}><li>Beleza</li></Link>
                 |
-                <Link to={"/"}><li>Cuidados Diários</li></Link>
+                <Link to={"/Cuidados_diarios"}><li>Cuidados Diários</li></Link>
                 |
-                <Link to={"/"}><li>Infantil</li></Link>
+                <Link to={"/Infantil"}><li>Infantil</li></Link>
                 |
             </ul>
         </header>

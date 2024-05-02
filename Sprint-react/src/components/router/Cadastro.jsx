@@ -10,8 +10,7 @@ const Cadastro = () => {
                     <div className="cadastro">
                         <div className="a">
                         <h1>Crie sua conta</h1>
-                        <button className="Google"><i class="bi bi-google"></i> Continuar com o Google</button>
-                        <h2>ou entre com o seu E-mail</h2>
+                        <h2>Entre com o seu E-mail</h2>
                         <form className="formulario">
                             <label>Nome completo:</label>
                             <input type="text" name="nome" placeholder="Digite o seu nome!" required/>

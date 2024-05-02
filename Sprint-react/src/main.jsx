@@ -7,6 +7,10 @@ import Error from './components/router/Error-page.jsx'
 import SaudeBemEstar from './components/router/Saude-BemEstar.jsx'
 import Beleza from './components/router/Beleza.jsx'
 import Cadastro from './components/router/Cadastro.jsx'
+import Cuidados_diarios from './components/router/Cuidados-diarios.jsx'
+import Generico from './components/router/Generico.jsx'
+import Infantil from './components/router/Infantil.jsx'
+import Medicamentos from './components/router/Medicamentos.jsx'
 
 const router = createBrowserRouter([
   {
@@ -32,6 +36,22 @@ const router = createBrowserRouter([
       {
         path: "/Cadastro",
         element: <Cadastro />
+      },
+      {
+        path: "/Cuidados_diarios",
+        element: <Cuidados_diarios />
+      },
+      {
+        path: "/Generico",
+        element: <Generico />
+      },
+      {
+        path: "/Infantil",
+        element: <Infantil />
+      },
+      {
+        path: "/Medicamentos",
+        element: <Medicamentos />
       },
       
     ]

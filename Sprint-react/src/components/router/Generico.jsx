@@ -1,17 +1,17 @@
 import { Link } from "react-router-dom";
 import Slider from "./Components/Slider";
-import ProductGallery5 from "./Components/ProductGallery5";
+import ProductGallery2 from "./Components/ProductGallery2";
 
-const SaudeBemEstar = () => {
+const Generico = () => {
     return (
         <div className="conteudo">
             <Slider />
             <div className="produtos">
-                <ProductGallery5 />
+                <ProductGallery2 />
             </div>
         </div>
 
     )
 }
 
-export default SaudeBemEstar;
+export default Generico;
