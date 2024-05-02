@@ -1,17 +1,17 @@
 import React from 'react';
 import '../style/Saude-BemEstar.css';
-import img1 from '../../../assets/Genericos/1.png'
-import img2 from '../../../assets/Genericos/2.png'
-import img3 from '../../../assets/Genericos/3.png'
-import img4 from '../../../assets/Genericos/4.png'
-import img5 from '../../../assets/Genericos/5.png'
-import img6 from '../../../assets/Genericos/6.png'
-import img7 from '../../../assets/Genericos/7.png'
-import img8 from '../../../assets/Genericos/8.png'
-import img9 from '../../../assets/Genericos/9.png'
-import img10 from '../../../assets/Genericos/10.png'
-import img11 from '../../../assets/Genericos/11.png'
-import img12 from '../../../assets/Genericos/12.png'
+import img1 from '../../../assets/medicamentos/1.png'
+import img2 from '../../../assets/medicamentos/2.png'
+import img3 from '../../../assets/medicamentos/3.png'
+import img4 from '../../../assets/medicamentos/4.png'
+import img5 from '../../../assets/medicamentos/5.png'
+import img6 from '../../../assets/medicamentos/6.png'
+import img7 from '../../../assets/medicamentos/7.png'
+import img8 from '../../../assets/medicamentos/8.png'
+import img9 from '../../../assets/medicamentos/9.png'
+import img10 from '../../../assets/medicamentos/10.png'
+import img11 from '../../../assets/medicamentos/11.png'
+import img12 from '../../../assets/medicamentos/12.png'
 
 const products = [
   { id: 1, name: 'Product 1', price: 19.99, image: img1 },
@@ -28,7 +28,7 @@ const products = [
   { id: 12, name: 'Product 12', price: 39.99, image: img12 },
   ];
   
-  const ProductGallery2 = () => {
+  const ProductGallery4 = () => {
     return (
       <div className="product-gallery">
         {products.map((product) => (
@@ -43,4 +43,4 @@ const products = [
     );
   };
 
-export default ProductGallery2;
+export default ProductGallery4;
