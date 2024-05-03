@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Slider from "./Components/Slider";
-import ProductGallery4 from "./Components/ProductGallery4";
+import ProductGallery4 from './Components/ProductGallery4 '
 
 const Medicamentos = () => {
     return (
