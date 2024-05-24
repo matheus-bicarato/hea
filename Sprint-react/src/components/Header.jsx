@@ -18,7 +18,7 @@ const Header = () => {
                 </ul>
                 <div className="icon-perfil">
                 <i class="bi bi-person-fill perfil"></i>
-                     <p>ola, Bem vindo! <br /><Link to={'/Cadastro'}><span>Entre </span></Link>ou <Link to={'/Cadastro'}><span>Cadastre</span></Link> aqui!</p>           </div>
+                     <p className="apresentacao">ola, Bem vindo! <br /><Link to={'/Cadastro'}><span>Entre </span></Link>ou <Link to={'/Cadastro'}><span>Cadastre</span></Link> aqui!</p>           </div>
             </nav>
             <hr />
             <nav className="nav-baixo">

@@ -14,18 +14,18 @@ import img11 from '../../../assets/medicamentos/11.png'
 import img12 from '../../../assets/medicamentos/12.png'
 
 const products = [
-  { id: 1, name: 'Product 1', price: 19.99, image: img1 },
-  { id: 2, name: 'Product 2', price: 29.99, image: img2 },
-  { id: 3, name: 'Product 3', price: 39.99, image: img3 },
-  { id: 4, name: 'Product 4', price: 19.99, image: img4 },
-  { id: 5, name: 'Product 5', price: 29.99, image: img5 },
-  { id: 6, name: 'Product 6', price: 39.99, image: img6 },
-  { id: 7, name: 'Product 7', price: 39.99, image: img7 },
-  { id: 8, name: 'Product 8', price: 19.99, image: img8 },
-  { id: 9, name: 'Product 9', price: 29.99, image: img9 },
-  { id: 10, name: 'Product 10', price: 39.99, image: img10 },
-  { id: 11, name: 'Product 11', price: 29.99, image: img11 },
-  { id: 12, name: 'Product 12', price: 39.99, image: img12 },
+  { id: 1, name: 'Dipirona', price: 5.99, image: img1 },
+    { id: 2, name: 'ibuprofeno', price: 7.99, image: img2 },
+    { id: 3, name: 'Buscopan', price: 19.99, image: img3 },
+    { id: 4, name: 'Allegra', price: 69.99, image: img4 },
+    { id: 5, name: 'ácido mefenâmico', price: 16.90, image: img5 },
+    { id: 6, name: 'Dorflex', price: 8.90, image: img6 },
+    { id: 7, name: 'paracetamol', price: 7.99, image: img7 },
+    { id: 8, name: 'Adivil', price: 19.99, image: img8 },
+    { id: 9, name: 'Cloridrato de Metformina', price: 9.99, image: img9 },
+    { id: 10, name: 'Cloridrato de Amiodarona', price: 6.99, image: img10 },
+    { id: 11, name: 'Novalgina', price: 12.99, image: img11 },
+    { id: 12, name: 'Ibuplil', price: 15.99, image: img12 },
   ];
   
   const ProductGallery4 = () => {
@@ -35,8 +35,8 @@ const products = [
           <div key={product.id} className="product-item">
             <img className='produtos-img' src={product.image} alt={product.name} />
             <h3>{product.name}</h3>
-            <p>Price: ${product.price}</p>
-            <button className='add-compra'>Add to Cart</button>
+            <p>preço: R${product.price}</p>
+            <button className='add-compra'>Adicionar no carrinho</button>
           </div>
         ))}
       </div>

@@ -12,26 +12,26 @@ const Carousel = () => {
     const products = [
         {
             id: 1,
-            title: 'Produto 1',
-            price: 19.99,
+            title: 'Dorflex',
+            price: 7.29,
             image: image1,
         },
         {
             id: 2,
-            title: 'Produto 2',
-            price: 29.99,
+            title: 'Amoxicilina',
+            price: 40.20,
             image: image2,
         },
         {
             id: 3,
-            title: 'Produto 3',
-            price: 39.99,
+            title: 'Buscopan',
+            price: 19.99,
             image: image3,
         },
         {
             id: 3,
-            title: 'Produto 4',
-            price: 39.99,
+            title: 'Redken',
+            price: 276.99,
             image: image4,
         },
     ];

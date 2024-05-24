@@ -47,13 +47,17 @@ hr {
   gap: 5px;
 }
 
+
 .perfil {
   font-size: 35px;
   color: white;
 }
+.apresentacao{
+  color: white;
+}
 
 span {
-  color: rgb(44, 44, 255);
+  color: #F4BA00;
   font-style: oblique;
 }
 
@@ -81,6 +85,7 @@ span {
 
 .carrinho {
   font-size: 25px;
+  color: white;
 }
 
 .conteudo {

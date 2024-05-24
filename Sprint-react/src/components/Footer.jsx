@@ -20,7 +20,7 @@ const Footer = () => {
                     <Link to={'/'}><img className="logo-footer" src={logo} alt="logo" /></Link>
                 </div>
             </div>
-            <hr />
+            <hr className="barra" />
             <div className="footer-baixo">
                 <div className="texto">
                     <p>

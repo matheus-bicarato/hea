@@ -14,18 +14,18 @@ import img11 from '../../../assets/Infantil/11.png'
 import img12 from '../../../assets/Infantil/12.png'
 
 const products = [
-  { id: 1, name: 'Product 1', price: 19.99, image: img1 },
-  { id: 2, name: 'Product 2', price: 29.99, image: img2 },
-  { id: 3, name: 'Product 3', price: 39.99, image: img3 },
-  { id: 4, name: 'Product 4', price: 19.99, image: img4 },
-  { id: 5, name: 'Product 5', price: 29.99, image: img5 },
-  { id: 6, name: 'Product 6', price: 39.99, image: img6 },
-  { id: 7, name: 'Product 7', price: 39.99, image: img7 },
-  { id: 8, name: 'Product 8', price: 19.99, image: img8 },
-  { id: 9, name: 'Product 9', price: 29.99, image: img9 },
-  { id: 10, name: 'Product 10', price: 39.99, image: img10 },
-  { id: 11, name: 'Product 11', price: 29.99, image: img11 },
-  { id: 12, name: 'Product 12', price: 39.99, image: img12 },
+  { id: 1, name: 'Pamper', price: 12.99, image: img1 },
+  { id: 2, name: 'Gohmsonis', price: 30.99, image: img2 },
+  { id: 3, name: 'bepantol', price: 18.99, image: img3 },
+  { id: 4, name: 'Chupeta', price: 2.99, image: img4 },
+  { id: 5, name: 'Baby José', price: 5.99, image: img5 },
+  { id: 6, name: 'Hipoglos', price: 8.99, image: img6 },
+  { id: 7, name: 'Sabonete de Glicerina', price: 7.99, image: img7 },
+  { id: 8, name: 'Aptamil', price: 9.99, image: img8 },
+  { id: 9, name: 'Shampoo Suave', price: 20.99, image: img9 },
+  { id: 10, name: 'Protex', price: 15.99, image: img10 },
+  { id: 11, name: 'Sabonete Suave', price: 7.99, image: img11 },
+  { id: 12, name: 'Condicionador', price: 19.99, image: img12 },
   ];
   
   const ProductGallery3 = () => {
@@ -35,8 +35,8 @@ const products = [
           <div key={product.id} className="product-item">
             <img className='produtos-img' src={product.image} alt={product.name} />
             <h3>{product.name}</h3>
-            <p>Price: ${product.price}</p>
-            <button className='add-compra'>Add to Cart</button>
+            <p>Preço: R${product.price}</p>
+            <button className='add-compra'>Adicionar no carrinho</button>
           </div>
         ))}
       </div>
