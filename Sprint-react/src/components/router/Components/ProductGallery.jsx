@@ -14,18 +14,18 @@ import img11 from '../../../assets/beleza-img/11.png'
 import img12 from '../../../assets/beleza-img/12.png'
 
 const products = [
-    { id: 1, name: 'Product 1', price: 19.99, image: img1 },
-    { id: 2, name: 'Product 2', price: 29.99, image: img2 },
-    { id: 3, name: 'Product 3', price: 39.99, image: img3 },
-    { id: 4, name: 'Product 4', price: 19.99, image: img4 },
-    { id: 5, name: 'Product 5', price: 29.99, image: img5 },
-    { id: 6, name: 'Product 6', price: 39.99, image: img6 },
-    { id: 7, name: 'Product 7', price: 39.99, image: img7 },
-    { id: 8, name: 'Product 8', price: 19.99, image: img8 },
-    { id: 9, name: 'Product 9', price: 29.99, image: img9 },
-    { id: 10, name: 'Product 10', price: 39.99, image: img10 },
-    { id: 11, name: 'Product 11', price: 29.99, image: img11 },
-    { id: 12, name: 'Product 12', price: 39.99, image: img12 },
+    { id: 1, name: 'Lip balm', price: 68.99, image: img1 },
+    { id: 2, name: 'Better Me', price: 13.99, image: img2 },
+    { id: 3, name: 'Óleo de Rícino', price: 19.99, image: img3 },
+    { id: 4, name: 'Toca', price: 13.99, image: img4 },
+    { id: 5, name: 'Koleston', price: 20.99, image: img5 },
+    { id: 6, name: 'Fortalecimento de Cabelo', price: 15.99, image: img6 },
+    { id: 7, name: 'Elásticos para cabelo', price: 2.99, image: img7 },
+    { id: 8, name: 'Pente', price: 10.99, image: img8 },
+    { id: 9, name: 'Risque', price: 8.99, image: img9 },
+    { id: 10, name: 'alicate de unha', price: 14.99, image: img10 },
+    { id: 11, name: 'Soothing', price: 13.99, image: img11 },
+    { id: 12, name: 'Pó descolorante', price: 15.30, image: img12 },
   ];
   
   const ProductGallery = () => {
@@ -35,8 +35,8 @@ const products = [
           <div key={product.id} className="product-item">
             <img className='produtos-img' src={product.image} alt={product.name} />
             <h3>{product.name}</h3>
-            <p>Price: ${product.price}</p>
-            <button className='add-compra'>Add to Cart</button>
+            <p>Preço: R${product.price}</p>
+            <button className='add-compra'>Adicionar no carrinho</button>
           </div>
         ))}
       </div>

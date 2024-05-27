@@ -14,18 +14,18 @@ import img11 from '../../../assets/Genericos/11.png'
 import img12 from '../../../assets/Genericos/12.png'
 
 const products = [
-  { id: 1, name: 'Product 1', price: 19.99, image: img1 },
-  { id: 2, name: 'Product 2', price: 29.99, image: img2 },
-  { id: 3, name: 'Product 3', price: 39.99, image: img3 },
-  { id: 4, name: 'Product 4', price: 19.99, image: img4 },
-  { id: 5, name: 'Product 5', price: 29.99, image: img5 },
-  { id: 6, name: 'Product 6', price: 39.99, image: img6 },
-  { id: 7, name: 'Product 7', price: 39.99, image: img7 },
-  { id: 8, name: 'Product 8', price: 19.99, image: img8 },
-  { id: 9, name: 'Product 9', price: 29.99, image: img9 },
-  { id: 10, name: 'Product 10', price: 39.99, image: img10 },
-  { id: 11, name: 'Product 11', price: 29.99, image: img11 },
-  { id: 12, name: 'Product 12', price: 39.99, image: img12 },
+  { id: 1, name: 'Isolaram potássica', price: 100.99, image: img1 },
+  { id: 2, name: 'Citrato de sildenafila', price: 10.99, image: img2 },
+  { id: 3, name: 'Ritimoneuran', price: 29.99, image: img3 },
+  { id: 4, name: 'Ácido acetilsalicílico', price: 4.99, image: img4 },
+  { id: 5, name: 'Maleato de dexclorfeniramina', price: 9.99, image: img5 },
+  { id: 6, name: 'Mebendazol', price: 4.99, image: img6 },
+  { id: 7, name: 'Cloridrato de Fexofenadina', price: 11.99, image: img7 },
+  { id: 8, name: 'Ácido mefenamico', price: 9.99, image: img8 },
+  { id: 9, name: 'Rosuvastatina cálcica', price: 24.99, image: img9 },
+  { id: 10, name: 'Maleato de enalapril', price: 4.99, image: img10 },
+  { id: 11, name: 'Amoxilina', price: 49.99, image: img11 },
+  { id: 12, name: 'Hidróxido de alumínio', price: 9.99, image: img12 },
   ];
   
   const ProductGallery2 = () => {
@@ -35,8 +35,8 @@ const products = [
           <div key={product.id} className="product-item">
             <img className='produtos-img' src={product.image} alt={product.name} />
             <h3>{product.name}</h3>
-            <p>Price: ${product.price}</p>
-            <button className='add-compra'>Add to Cart</button>
+            <p>Preço: R${product.price}</p>
+            <button className='add-compra'>Adicionar no carrinho</button>
           </div>
         ))}
       </div>
