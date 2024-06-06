@@ -1,22 +1,21 @@
 import { createDrawerNavigator } from "@react-navigation/drawer";
-import {Feather} from '@expo/vector-icons';
+import { Feather } from '@expo/vector-icons';
+import { Image, TextInput } from "react-native";
+import CustomHeader from "../components/CustomHeader";
 
 import TabRoutes from "./tab.routes";
 import StackRoutes from "./stack.routes";
 
 const Drawer = createDrawerNavigator();
 
-export default function DrawerRoutes(){
-    return(
-        <Drawer.Navigator screenOptions={{title: ''}}>
-            <Drawer.Screen
-                name="home"
-                component={TabRoutes}
-                options={{
-                    drawerIcon: ({ color, size }) => <Feather name="home" color={color} size={size} />,
-                    drawerLabel: 'Inicio'
-                }}
-            />
+export default function DrawerRoutes() {
+    return (
+        <Drawer.Navigator screenOptions={{
+            title: '',
+            header: (props) => (<CustomHeader />),
+
+        }}
+            initialRouteName="profile">
             <Drawer.Screen
                 name="profile"
                 component={StackRoutes}
@@ -25,6 +24,16 @@ export default function DrawerRoutes(){
                     drawerLabel: 'Meu perfil'
                 }}
             />
+
+            <Drawer.Screen
+                name="princial"
+                component={TabRoutes}
+                options={{
+                    drawerIcon: ({ color, size }) => <Feather name="home" color={color} size={size} />,
+                    drawerLabel: 'Inicio'
+                }}
+            />
+
         </Drawer.Navigator>
     )
 }

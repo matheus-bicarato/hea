@@ -11,7 +11,7 @@ export default function TabRoutes(){
     return (
         <Tab.Navigator screenOptions={{headerShown: false}}>
             <Tab.Screen
-                name="feed"
+                name="Home"
                 component={Feed}
                 options={{
                     tabBarIcon: ({ color, size }) => <Feather name="home" color={color} size={size} />,

@@ -1,9 +1,9 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, TextInput } from 'react-native';
 
 export default function Profile() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Profile</Text>
+      
     </View>
   );
 }
@@ -19,4 +19,5 @@ const styles = StyleSheet.create({
     fontSize: 22,
     fontWeight: 'bold'
   }
+  
 });
