@@ -6,16 +6,21 @@ import CustomHeader from "../components/CustomHeader";
 import TabRoutes from "./tab.routes";
 import StackRoutes from "./stack.routes";
 
+
 const Drawer = createDrawerNavigator();
 
 export default function DrawerRoutes() {
     return (
-        <Drawer.Navigator screenOptions={{
-            title: '',
-            header: (props) => (<CustomHeader />),
+        <Drawer.Navigator
+            screenOptions={{
+                title: '',
+                header: (props) => (<CustomHeader />),
 
-        }}
-            initialRouteName="profile">
+
+            }}
+            initialRouteName="profile"
+            
+        >
             <Drawer.Screen
                 name="profile"
                 component={StackRoutes}
@@ -26,13 +31,15 @@ export default function DrawerRoutes() {
             />
 
             <Drawer.Screen
-                name="princial"
+                name="principal"
                 component={TabRoutes}
                 options={{
                     drawerIcon: ({ color, size }) => <Feather name="home" color={color} size={size} />,
                     drawerLabel: 'Inicio'
                 }}
+
             />
+            
 
         </Drawer.Navigator>
     )

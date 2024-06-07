@@ -1,9 +1,10 @@
 import { StyleSheet, Text, View, TextInput } from 'react-native';
+import Slider from '../components/Slider';
 
 export default function Profile() {
   return (
     <View style={styles.container}>
-      
+      <Slider />
     </View>
   );
 }
@@ -11,13 +12,11 @@ export default function Profile() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#99D8DD',
     alignItems: 'center',
     justifyContent: 'center',
+    margin: 20,
+    borderRadius: 10,
   },
-  title: {
-    fontSize: 22,
-    fontWeight: 'bold'
-  }
-  
+
 });
