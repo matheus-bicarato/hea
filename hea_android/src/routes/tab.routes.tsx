@@ -9,7 +9,7 @@ const Tab = createBottomTabNavigator();
 
 export default function TabRoutes(){
     return (
-        <Tab.Navigator screenOptions={{headerShown: false}}>
+        <Tab.Navigator screenOptions={{headerShown: false}} initialRouteName="Home">
             <Tab.Screen
                 name="Home"
                 component={Feed}

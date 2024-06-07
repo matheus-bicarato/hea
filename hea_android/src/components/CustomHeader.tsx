@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         paddingHorizontal: 10,
         height: 56, // Altura padrão do cabeçalho do React Navigation
-        backgroundColor: '#5CB4C2', // Ajuste a cor conforme necessário
+        backgroundColor: '#5CB4C2',
     },
     input: {
         height: 40,

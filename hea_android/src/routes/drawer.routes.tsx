@@ -18,7 +18,7 @@ export default function DrawerRoutes() {
 
 
             }}
-            initialRouteName="profile"
+            initialRouteName="principal"
             
         >
             <Drawer.Screen
