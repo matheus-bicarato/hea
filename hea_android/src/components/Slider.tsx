@@ -11,7 +11,8 @@ const Slider = () => {
     require('../../assets/explore2.png'),
     require('../../assets/explore3.png'),
   ];
-  const renderItem = ({ item, index }) => (
+
+  const renderItem = ({ item }) => (
     <View style={styles.slide}>
       <Image source={item} style={styles.image} />
     </View>
@@ -34,21 +35,23 @@ const Slider = () => {
 };
 
 const styles = StyleSheet.create({
-    containerCarousel: {
+  containerCarousel: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
   slide: {
-    flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: 'transparent',
+    width: Dimensions.get('window').width, // Garantir que o slide ocupe a largura total
+    height: Dimensions.get('window').height * 0.5, // Ajustar altura conforme necessário
   },
   image: {
     width: '100%',
     height: '100%',
+    resizeMode: 'contain', // Garantir que a imagem se ajuste corretamente
   },
   text: {
     fontSize: 20,
