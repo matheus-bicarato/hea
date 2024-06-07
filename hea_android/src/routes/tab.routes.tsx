@@ -22,8 +22,8 @@ export default function TabRoutes(){
                 name="new"
                 component={New}
                 options={{
-                    tabBarIcon: ({ color, size }) => <Feather name="plus" color={color} size={size} />,
-                    tabBarLabel: 'Novo'
+                    tabBarIcon: ({ color, size }) => <Feather name="shopping-cart" color={color} size={size} />,
+                    tabBarLabel: 'Carrinho'
                 }}
             />
         </Tab.Navigator>
