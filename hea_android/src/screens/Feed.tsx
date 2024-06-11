@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View, TouchableOpacity, Image, ImageBackground, SafeAreaView, ScrollView } from 'react-native';
 import ProductCarousel from '../components/carousel/ProductCarousel';
+import ProductCarouselBanners from '../components/carousel/ProductCarouselBanners';
 
 export default function Feed() {
   const products = [
@@ -19,16 +20,33 @@ export default function Feed() {
       image: require('../../assets/Genericos/2.png'),
     },
   ];
+
+  const Banner = [
+    {
+
+      image: require('../../assets/bannerApp1.jpeg'),
+    },
+    {
+
+      image: require('../../assets/bannerApp2.png'),
+    },
+    {
+
+      image: require('../../assets/bannerApp3.png'),
+    },
+  ];
+
   return (
     <View>
       <ScrollView>
         <View style={styles.container}>
           <TouchableOpacity>
             <Image
-              source={require('../../assets/bannerApp.jpeg')}
+              source={require('../../assets/bannerApp1.jpeg')}
               style={{ width: 310, height: 300, borderRadius: 10, marginTop: 10, }}
             />
           </TouchableOpacity>
+
           <View style={{ elevation: 10, borderColor: '#ddd', borderWidth: 2, marginTop: 10, borderRadius: 10, }}>
             <ImageBackground
               source={require('../../assets/fundoSeila.png')}
@@ -78,7 +96,7 @@ const styles = StyleSheet.create({
   },
   Footer: {
     backgroundColor: '#5CB4C2',
-    width: 310,
+    width: 'auto',
     height: 'auto',
     alignItems: 'center',
     justifyContent: 'center',

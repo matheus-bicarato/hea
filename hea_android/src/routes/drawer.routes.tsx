@@ -1,10 +1,11 @@
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { Feather } from '@expo/vector-icons';
-import { Image, TextInput } from "react-native";
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import CustomHeader from "../components/CustomHeader";
 
 import TabRoutes from "./tab.routes";
 import StackRoutes from "./stack.routes";
+import Genericos from "../screens/Genericos";
 
 
 const Drawer = createDrawerNavigator();
@@ -19,7 +20,7 @@ export default function DrawerRoutes() {
 
             }}
             initialRouteName="principal"
-            
+
         >
             <Drawer.Screen
                 name="profile"
@@ -39,7 +40,16 @@ export default function DrawerRoutes() {
                 }}
 
             />
-            
+            <Drawer.Screen
+                name="Genericos"
+                component={Genericos}
+                options={{
+                    drawerIcon: ({ color, size }) => <FontAwesome name="stethoscope" color={color} size={size} />,
+                    drawerLabel: 'Genericos'
+                }}
+
+            />
+
 
         </Drawer.Navigator>
     )

@@ -23,7 +23,7 @@ export default function TabRoutes(){
                 component={New}
                 options={{
                     tabBarIcon: ({ color, size }) => <Feather name="shopping-cart" color={color} size={size} />,
-                    tabBarLabel: 'Carrinho'
+                    tabBarLabel: 'Carrinho',
                 }}
             />
         </Tab.Navigator>

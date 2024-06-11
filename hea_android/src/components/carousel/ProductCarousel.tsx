@@ -26,7 +26,7 @@ const ProductCarousel = ({ products }) => {
       height={300}
       autoPlay={true}
       data={products}
-      scrollAnimationDuration={2000}
+      scrollAnimationDuration={4000}
       renderItem={renderItem}
     />
   );

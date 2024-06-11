@@ -8,6 +8,8 @@ npm install @react-navigation/native-stack
 npm install @react-native-community/slider
 npm install --save react-native-snap-carousel
 npm install react-native-reanimated-carousel react-native-reanimated
+npm install react-native-vector-icons
+
 
 
 
