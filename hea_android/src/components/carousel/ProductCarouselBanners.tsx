@@ -4,8 +4,8 @@ import Carousel from 'react-native-reanimated-carousel';
 
 const { width: viewportWidth } = Dimensions.get('window');
 
-const ProductCarousel = ({ products }) => {
-  const renderItem = ({ item }) => (
+const ProductCarouselBanners = ({ products }) => {
+  const renderItemBanners = ({ item }) => (
     <View style={styles.slideBanner}>
       <TouchableOpacity>
         <Image source={item.image} style={styles.imageBanner} />
@@ -22,7 +22,7 @@ const ProductCarousel = ({ products }) => {
       autoPlay={true}
       data={products}
       scrollAnimationDuration={4000}
-      renderItem={renderItem}
+      renderItem={renderItemBanners}
     />
   );
 };
@@ -47,4 +47,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ProductCarousel;
+export default ProductCarouselBanners;

@@ -1,4 +1,4 @@
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View, ScrollView } from 'react-native';
 import ProductCarouselBanners from '../components/carousel/ProductCarouselBanners';
 import ProductGalleryGenericos from '../components/ProductGalleryGenericos';
 
@@ -21,10 +21,15 @@ export default function Genericos() {
 
   return (
     <View style={styles.container}>
+      <ScrollView>
       <SafeAreaView style={styles.containerBanner}>
         <ProductCarouselBanners products={Banner} />
       </SafeAreaView>
       
+      <SafeAreaView>
+        <ProductGalleryGenericos/>
+      </SafeAreaView>
+      </ScrollView>
     </View>
   );
 }

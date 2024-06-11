@@ -1,6 +1,6 @@
 // components/ProductGallery.js
 import React from 'react';
-import { View, Text, FlatList, Image, StyleSheet } from 'react-native';
+import { View, Text, FlatList, Image, StyleSheet,TouchableOpacity } from 'react-native';
 
 const products = [
   {
@@ -13,30 +13,36 @@ const products = [
     id: 2,
     name: 'Produto 2',
     price: 'R$ 150,00',
-    image: require('../../assets/Genericos/1.png'),
+    image: require('../../assets/Genericos/2.png'),
   },
   {
     id: 3,
     name: 'Produto 3',
     price: 'R$ 200,00',
-    image: require('../../assets/Genericos/1.png'),
+    image: require('../../assets/Genericos/3.png'),
+  },
+  {
+    id: 4,
+    name: 'Produto 4',
+    price: 'R$ 200,00',
+    image: require('../../assets/Genericos/4.png'),
   },
 ];
 
 const ProductGallery = () => {
-  const renderItem = ({ item }) => (
+  const renderitens = ({ item }) => (
     <View style={styles.productContainer}>
-      <Image source={item.image} style={styles.image} />
+      <TouchableOpacity><Image source={item.image} style={styles.image} /></TouchableOpacity>
       <Text style={styles.title}>{item.name}</Text>
       <Text style={styles.price}>{item.price}</Text>
     </View>
   );
 
   return (
-    <View style={styles.container}>
+    <View style={styles.containerGallery}>
       <FlatList
         data={products}
-        renderItem={renderItem}
+        renderItem={renderitens}
         keyExtractor={item => item.id.toString()}
       />
     </View>
@@ -44,22 +50,27 @@ const ProductGallery = () => {
 };
 
 const styles = StyleSheet.create({
-  container: {
+  containerGallery: {
     flex: 1,
+    flexDirection: 'row',
     padding: 16,
     backgroundColor: '#fff',
   },
   productContainer: {
     marginBottom: 16,
-    borderWidth: 1,
+    borderWidth: 2,
     borderColor: '#ddd',
     padding: 16,
     borderRadius: 8,
+    
+    
   },
+
   image: {
     width: '100%',
     height: 200,
     marginBottom: 8,
+
   },
   title: {
     fontSize: 18,
