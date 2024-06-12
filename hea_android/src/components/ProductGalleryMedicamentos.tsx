@@ -1,35 +1,35 @@
 // components/ProductGallery.js
 import React from 'react';
-import { View, Text, FlatList, Image, StyleSheet,TouchableOpacity, VirtualizedList } from 'react-native';
+import { View, Text, FlatList, Image, StyleSheet,TouchableOpacity } from 'react-native';
 
 const products = [
   {
     id: 1,
-    name: 'Isolaram potássica',
-    price: 'R$ 100.99',
-    image: require('../../assets/Genericos/1.png'),
+    name: 'Dipirona',
+    price: 'R$ 5.99',
+    image: require('../../assets/medicamentos/1.png'),
   },
   {
     id: 2,
-    name: 'Citrato de sildenafila',
-    price: 'R$ 10.99',
-    image: require('../../assets/Genericos/2.png'),
+    name: 'ibuprofeno',
+    price: 'R$ 7.99',
+    image: require('../../assets/medicamentos/2.png'),
   },
   {
     id: 3,
-    name: 'Ritimoneuran',
-    price: 'R$ 29.99',
-    image: require('../../assets/Genericos/3.png'),
+    name: 'Buscopan',
+    price: 'R$ 19.99',
+    image: require('../../assets/medicamentos/3.png'),
   },
   {
     id: 4,
-    name: 'Ácido acetilsalicílico',
-    price: 'R$ 4.99',
-    image: require('../../assets/Genericos/4.png'),
+    name: 'Allegra',
+    price: 'R$ 69.99',
+    image: require('../../assets/medicamentos/4.png'),
   },
 ];
 
-const ProductGalleryGenericos = () => {
+const ProductGalleryMedicamentos = () => {
   const renderitens = ({ item }) => (
     <View style={styles.productContainer}>
       <TouchableOpacity><Image source={item.image} style={styles.image} /></TouchableOpacity>
@@ -82,4 +82,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ProductGalleryGenericos;
+export default ProductGalleryMedicamentos;

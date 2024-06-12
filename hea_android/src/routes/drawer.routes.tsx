@@ -6,6 +6,11 @@ import CustomHeader from "../components/CustomHeader";
 import TabRoutes from "./tab.routes";
 import StackRoutes from "./stack.routes";
 import Genericos from "../screens/Genericos";
+import Beleza from "../screens/Beleza";
+import Medicamentos from "../screens/Medicamentos";
+import CuidadosDiarios from "../screens/CuidadosDiarios";
+import Infantil from "../screens/Infantil";
+import SaudeEBemEstar from "../screens/SaudeEBemEstar";
 
 
 const Drawer = createDrawerNavigator();
@@ -47,7 +52,46 @@ export default function DrawerRoutes() {
                     drawerIcon: ({ color, size }) => <FontAwesome name="stethoscope" color={color} size={size} />,
                     drawerLabel: 'Genericos'
                 }}
-
+            />
+            <Drawer.Screen
+                name="Beleza"
+                component={Beleza}
+                options={{
+                    drawerIcon: ({ color, size }) => <FontAwesome name="stethoscope" color={color} size={size} />,
+                    drawerLabel: 'Beleza'
+                }}
+            />
+            <Drawer.Screen
+                name="Medicamentos"
+                component={Medicamentos}
+                options={{
+                    drawerIcon: ({ color, size }) => <FontAwesome name="stethoscope" color={color} size={size} />,
+                    drawerLabel: 'Medicamentos'
+                }}
+            />
+            <Drawer.Screen
+                name="SaudeEBemEstar"
+                component={SaudeEBemEstar}
+                options={{
+                    drawerIcon: ({ color, size }) => <FontAwesome name="stethoscope" color={color} size={size} />,
+                    drawerLabel: 'Saude e bem estar'
+                }}
+            />
+            <Drawer.Screen
+                name="CuidadosDiarios"
+                component={CuidadosDiarios}
+                options={{
+                    drawerIcon: ({ color, size }) => <FontAwesome name="stethoscope" color={color} size={size} />,
+                    drawerLabel: 'Cuidados Diarios'
+                }}
+            />
+            <Drawer.Screen
+                name="Infantil"
+                component={Infantil}
+                options={{
+                    drawerIcon: ({ color, size }) => <FontAwesome name="stethoscope" color={color} size={size} />,
+                    drawerLabel: 'Infantil'
+                }}
             />
 
 

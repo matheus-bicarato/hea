@@ -5,19 +5,19 @@ import ProductCarouselBanners from '../components/carousel/ProductCarouselBanner
 export default function Feed() {
   const products = [
     {
-      title: 'Produto 1',
-      price: 'R$ 100,00',
-      image: require('../../assets/Genericos/2.png'),
+      name: 'Óleo de Rícino',
+      price: 'R$ 19.99',
+      image: require('../../assets/beleza-img/3.png'),
     },
     {
-      title: 'Produto 2',
-      price: 'R$ 200,00',
-      image: require('../../assets/Genericos/2.png'),
+      name: 'Allegra',
+      price: 'R$ 69.99',
+      image: require('../../assets/medicamentos/4.png'),
     },
     {
-      title: 'Produto 3',
-      price: 'R$ 300,00',
-      image: require('../../assets/Genericos/2.png'),
+      name: 'Dove',
+      price: 'R$ 10.99',
+      image: require('../../assets/saude_e_bem_estar/3.png'),
     },
   ];
 
