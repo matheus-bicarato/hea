@@ -15,7 +15,6 @@ const ProductCarousel = ({ products }) => {
       <TouchableOpacity style={styles.BottonProducts} >
         <Text style={styles.BottonProducts}>Compre Aqui!!</Text>
       </TouchableOpacity>
-
     </View>
   );
 
@@ -26,7 +25,7 @@ const ProductCarousel = ({ products }) => {
       height={300}
       autoPlay={true}
       data={products}
-      scrollAnimationDuration={4000}
+      scrollAnimationDuration={7000}
       renderItem={renderItem}
     />
   );
@@ -41,6 +40,9 @@ const styles = StyleSheet.create({
     marginLeft: 25,
     marginRight: 25,
     alignItems:'center',
+    borderColor: '#606060',
+    borderWidth: 0.4,
+    elevation: 20,
   },
   BottonProducts: {
     width: 220,

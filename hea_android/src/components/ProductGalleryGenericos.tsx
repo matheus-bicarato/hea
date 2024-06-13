@@ -1,6 +1,6 @@
 // components/ProductGallery.js
 import React from 'react';
-import { View, Text, FlatList, Image, StyleSheet,TouchableOpacity, VirtualizedList } from 'react-native';
+import { View, Text, FlatList, Image, StyleSheet, TouchableOpacity, VirtualizedList, Dimensions } from 'react-native';
 
 const products = [
   {
@@ -32,9 +32,11 @@ const products = [
 const ProductGalleryGenericos = () => {
   const renderitens = ({ item }) => (
     <View style={styles.productContainer}>
-      <TouchableOpacity><Image source={item.image} style={styles.image} /></TouchableOpacity>
-      <Text style={styles.title}>{item.name}</Text>
-      <Text style={styles.price}>{item.price}</Text>
+      <View>
+        <TouchableOpacity><Image source={item.image} style={styles.image} /></TouchableOpacity>
+        <Text style={styles.title}>{item.name}</Text>
+        <Text style={styles.price}>{item.price}</Text>
+      </View>
     </View>
   );
 
@@ -44,6 +46,8 @@ const ProductGalleryGenericos = () => {
         data={products}
         renderItem={renderitens}
         keyExtractor={item => item.id.toString()}
+        numColumns={2} // Define o número de colunas
+        columnWrapperStyle={styles.itens}
       />
     </View>
   );
@@ -57,23 +61,27 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   productContainer: {
-    marginBottom: 16,
-    borderWidth: 2,
+    flex: 1,
+    margin: 8, // Margem ao redor de cada item
+    borderWidth: 1,
     borderColor: '#ddd',
     padding: 16,
     borderRadius: 8,
-    
-    
+    alignItems: 'center', 
+  },
+  itens: {
+    flex: 1,
+    justifyContent: 'space-between',
   },
 
   image: {
-    width: '100%',
-    height: 200,
+    width: (Dimensions.get('window').width / 2) - 48, // Ajusta a largura da imagem para caber na coluna
+    height: 150, // Altura da imagem
     marginBottom: 8,
 
   },
   title: {
-    fontSize: 18,
+    fontSize: 15,
     fontWeight: 'bold',
   },
   price: {
