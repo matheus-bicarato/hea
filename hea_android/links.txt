@@ -1,20 +1,26 @@
 npm install @react-navigation/native
 npx expo install react-native-screens react-native-safe-area-context
-npm install react-native-gesture-handler react-native-reanimated
-npm install @react-navigation/bottom-tabs
+
 npm install @react-navigation/drawer
+npm install react-native-gesture-handler react-native-reanimated
+*isso esta dentro da pasta babel.config.js*
+plugins: ['react-native-reanimated/plugin'],
+
+npm install @react-navigation/bottom-tabs
+
 npm install @react-navigation/native-stack
 
 npm install @react-native-community/slider
+
 npm install --save react-native-snap-carousel
 npm install react-native-reanimated-carousel react-native-reanimated
+
 npm install react-native-vector-icons
 
 
 
 
-*isso esta dentro da pasta babel.config.js*
-plugins: ['react-native-reanimated/plugin'],
+
 
 
 
